@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imagenes/dragon.ico" />
+    <title>GAM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8909e91f89.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Barra de navegación -->
+    <header class="main-header">
+      <img src="./imagenes/Isogam1.png" alt="Isologo gam" />
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="juegos.html">Juegos</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Fin barra de navegación -->
+
+    <section class="contacto">
+      <h2 id="contacto">CONTACTO</h2>
+      <div class="formcontainer">
+        <form action="#">
+          <p>
+            <label for="camponombre">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              id="camponombre"
+              placeholder="Nombre"
+            />
+          </p>
+          <p>
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Apellido"
+            />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </p>
+          <p>
+            <label for="teléfono">Teléfono</label>
+            <input
+              type="number"
+              name="teléfono"
+              id="teléfono"
+              placeholder="Teléfono"
+            />
+          </p>
+          <p>
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="areamensaje"
+              rows="8"
+              cols="69"
+            ></textarea>
+          </p>
+          <p>
+            <input type="submit" value="Enviar" />
+          </p>
+        </form>
+
+        <div id="gmap">
+          <iframe
+            id="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3284692141588!2d-58.39551738440493!3d-34.59585468046159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabde1df01bd%3A0x59fc6e926c4505ee!2sAv.%20Santa%20Fe%20%26%20Av.%20Callao%2C%20C1061%20CABA!5e0!3m2!1ses!2sar!4v1630808614844!5m2!1ses!2sar"
+            loading="lazy"
+            width="600px"
+            height="600px"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="iconos_footer">
+        <i class="fa-brands fa-instagram"></i
+        ><a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="texto_footer"
+          >/GAM</a
+        >
+        <i class="fa-brands fa-facebook"></i
+        ><a href="https://www.facebook.com" target="_blank" class="texto_footer"
+          >GAM</a
+        >
+        <i class="fa-brands fa-artstation"></i
+        ><a
+          href="https://www.artstation.com"
+          target="_blank"
+          class="texto_footer"
+          >GAM</a
+        >
+        <i class="fa-regular fa-envelope"></i
+        ><a href="https://www.gmail.com" target="_blank" class="texto_footer"
+          >gam@gmail.com</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
