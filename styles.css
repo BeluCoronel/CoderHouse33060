@@ -7,68 +7,68 @@
 }
 
 
-/* home */
-.main-header {
-    background-color: black;
-    padding: 30px;
-    display: inline-flex;
-    width: 100%;
-
-}
-.main-header img{
-    margin-left: 80px;
-}
 
 
-
-.navbar {
-    position: absolute;
-    right: 0;
-    margin-right: 50px;
-    margin-top: 10px;
-
-}
-
-
-.navbar li {
-    display: inline-block;
-    text-decoration: none;
-    background-color: black;
-    font-family: open sans, sans-serif;
-    font-size: 30px;
-    margin: auto;
-}
-
-.navbar li a {
+.nav-link{
     color: white;
-    margin: 50px;
-    width: 100%;
-    text-decoration: none;
-
+   
 }
 
-.navbar li a:hover,
-a:visited {
-    color: #F9E84B;
+.nav-item a:hover{
+    color:#F9E84B;
     text-decoration: underline;
+
 }
+
+.header, .row{
+    padding: 0; 
+}
+
+
+.container-fluid{
+    padding: 0;
+    margin:0;
+    width: 100%;
+}
+
+
+.font-navbar{
+    font-size:30px;
+    font-family: open sans, sans-serif;
+}
+
+.navbar-brand{
+    padding: 10px;
+}
+
+.navbar-toggler-icon{
+    width: 35px;
+    height:35px;
+    padding:10px;
+}
+
 
 
 
 body {
     background-image: url(imagenes/fondo2.jpg);
     overflow-x: hidden;
-    
-
-    
 }
 
 .isologo {
     
-    margin-top: 5%;
+    margin-top: 50%;
     text-align : center;
-
+  
 }
+
+.carrousel slide{
+    margin-top:500%;
+}
+
+
+
+
 
 
 .isologo-text {
@@ -79,7 +79,6 @@ span {
     display:inline-block;
     font-family: monospace;
     white-space: nowrap;
-    border-right: 4px solid;
     width: 15ch;
     color: white;
     font-size:50px;
@@ -97,9 +96,14 @@ span {
     50% { border-color: transparent}
     }
 
+    .neon{
+        text-align: center;
+        
+        margin-top: 30px;
+        margin-bottom:30px;
+    
 
-
-
+    }
 
 
 /* fin home */
@@ -108,16 +112,12 @@ span {
 footer {
     background-color: #000000be;
     padding: 10px;
+    width:100vw; 
+    margin:0;
 
     text-align: center;
     bottom: 0;
-    width: 100%;
-    position: absolute;
-
     cursor:url(./imagenes/puntero.png), auto;  
-
-
-
 }
 
 
@@ -300,7 +300,7 @@ input[type=submit]:hover{
 .nosotros{
     text-align: center;
     border-radius:10px;
-    margin-top: 50px;
+    margin-top: 200px;
     
 }
 
@@ -316,56 +316,11 @@ background-color: #66B22E;
 .marianoso h3{
     background-color:#009EE2;
 }
- .neon{
-    text-align: center;
-    margin-top: 70px;
-    margin-right: 50px;
-    
- }
 
- .neon img{
-    margin-left: 80px;
- }
  /* fin nosotros */
 
  /* juegos */
 
- table {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 150px;
-
-    
- }
- th, td {
-    width: 25%;
-    text-align: center;
-    vertical-align: top;
-    border: 3px solid white;
-    padding:20px;
-    font-family: open sans, sans-serif;
-    color: white;
-    font-size: 20px;
- }
- 
- .titulo1{
-    font-size: 20px;
-    color:white;
-    background-color: #E20613;
- }
-
- .titulo2{
-    font-size:20px;
-    color:white;
-    background-color:#66B22E
-
- }
-
- .titulo3{
-    font-size:20px;
-    color:white;
-    background-color: #009EE2
- }
 /* fin juegos */
 
 /* proyectos */
@@ -398,4 +353,352 @@ background-color: #66B22E;
 
 #ig_juli:hover{
     color:palevioletred;
+}
+
+.fixed-top{
+    position:sticky;
+}
+
+@media (min-width: 992px) {
+    * {
+        padding: 0;
+        margin: 0;
+        cursor:url(./imagenes/puntero.png), auto;  
+    
+    
+    }
+    
+.fixed-top{
+    position:sticky;
+}
+    
+    .nav-link{
+        color: white;
+    }
+    
+    .nav-item a:hover{
+        color:#F9E84B;
+        text-decoration: underline;
+    }
+
+    .font-navbar{
+        font-size:30px;
+        font-family: open sans, sans-serif;
+    }
+    
+    .navbar-brand{
+        padding: 10px;
+    }
+    
+    .navbar-toggler-icon{
+        width: 35px;
+        height:35px;
+        padding:10px;
+    }
+
+    body {
+        background-image: url(imagenes/fondo2.jpg);
+        overflow-x: hidden;
+        
+    
+        
+    }
+    
+    .isologo {
+        
+        margin-top: 10%;
+        text-align : center;
+    }
+
+    .isologo-text {
+        text-align: center;
+    }
+    
+    span {
+        display:inline-block;
+        font-family: monospace;
+        white-space: nowrap;
+        width: 15ch;
+        color: white;
+        font-size:50px;
+        margin-top: 20px;
+        animation: typing 2s steps(15), blink 1s infinite step-end alternate;
+        overflow:hidden;
+        }
+        
+        @keyFrames typing {
+        
+        from { width: 0}
+        }
+        
+        @keyFrames blink {
+        50% { border-color: transparent}
+        }
+    
+        .neon{
+            text-align: center;
+            
+            margin-top: 30px;
+            margin-bottom:30px;
+        
+    
+        }
+    
+    
+    /* fin home */
+    
+    /* fotter */
+    footer {
+        background-color: #000000be;
+        padding: 10px;
+        width:100%;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        
+        
+    
+        cursor:url(./imagenes/puntero.png), auto;  
+    
+    
+    
+    }
+   
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .iconos_footer {
+        color: white;
+        font-size: 30px;
+        font-family: open sans, sans-serif;
+
+    }
+    
+    .iconos_footer i {
+        margin: 20px;
+    }
+    
+    .texto_footer {
+        font-size: 20px;
+        margin-right: 20px;
+        text-transform: lowercase;
+    
+    
+    }
+    
+    .iconos_footer a:hover {
+        color: #009EE2;
+        text-decoration: underline;
+    }
+    
+    .iconos_footer a {
+        color: white;
+    }
+    /* fin footer */
+    
+    /* contacto */
+    
+    h2{
+        
+        color: white;
+        font-family: open sans, sans-serif;
+        font-size:30px;
+        margin-left:150px;
+        margin-top:30px;
+    }
+    
+    form{
+        margin-left: 40px;
+    }
+    input{
+        width: 25%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+    label{
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    
+    }
+    form{
+        width: 500px;
+        display: inline-block;
+        
+    }
+    
+    form p{
+        color: white;
+        font-family: open sans, sans-serif;
+        font-size:15px;
+    }
+    .formcontainer{
+        clear: both;
+        margin: 0 auto;
+        padding: 15px;
+        margin-left: 50px;
+
+    }
+    .formcontainer input {
+        width: 100%;
+        clear: both;
+        border-radius: 15px;
+       
+    }
+
+    .formcontainer textarea {
+        width:-webkit-fill-available;
+        border-radius: 15px;
+    }
+    input[type=submit] {
+        background-color:#009EE2;
+        color: rgb(253, 250, 250);
+        cursor: pointer;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        margin-top: 25px;
+    }
+    
+    input[type=submit]:hover{
+        background-color:#F9E84B;
+        color: black;
+    }
+    
+    #gmap{
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 15px;
+        margin-top:30px;
+        margin-left: 50px;
+    
+    
+    }
+    #mapa {
+        border: 10px solid;
+        border-color: #009EE2 #66B22E #F9E84B #E20613;
+        float: right;
+        width: 720px;
+        height: 550px;
+        border-radius: 15px;
+    }
+    
+    /* fin contacto */
+    
+    /* nosotros */
+    
+    .gonzalo{
+        display: inline-block;
+        margin:50px;
+        border:10px solid #E20613;
+        border-radius: 10px;
+       
+    }
+    
+    .ariel{
+        display: inline-block;
+        margin:50px;
+        border:10px solid #66B22E;
+        border-radius: 10px;
+       
+    }
+    
+    .marianoso{
+        display: inline-block;
+        margin:50px;
+        border:10px solid #009EE2;
+        border-radius: 10px;
+        
+        
+    
+    }
+    
+    .nosotros p{
+        text-align: center;
+        width: 307px;
+        
+        color: white;
+        font-family: open sans, sans-serif;
+        font-size:15px;
+        margin-bottom: 30px;
+        
+    
+    }
+    
+    .nosotros h3{
+        color: white;
+        font-family: open sans, sans-serif;
+        text-align: center;
+        margin-bottom:10px;
+        
+        font-size:25px;
+        
+    
+    }
+    
+    .nosotros{
+        text-align: center;
+        border-radius:10px;
+        margin-top: 200px;
+        
+    }
+    
+    .gonzalo h3{
+        background-color:#E20613;
+    }
+    
+    .ariel h3{
+    background-color: #66B22E;
+    
+    }
+    
+    .marianoso h3{
+        background-color:#009EE2;
+    }
+    
+     /* fin nosotros */
+    
+     /* juegos */
+
+    /* fin juegos */
+    
+    /* proyectos */
+    
+    .proyect{
+        text-align: center;
+        font-family: open sans, sans-serif;
+        font-size: 50px;
+        margin-right: 30px;
+        text-decoration: underline palevioletred;
+    }
+    
+    .video_juli{
+        margin-left: 34%;
+    }
+    #video_juli{
+        border: 10px solid;
+        border-color: #009EE2 #66B22E #F9E84B #E20613;
+        text-align: center;
+        margin-top:50px;
+        width: 720px;
+        height: 550px;
+        border-radius: 15px;
+    }
+    
+    #ig_juli {
+        color: white;
+        text-decoration:underline palevioletred;
+    }
+    
+    #ig_juli:hover{
+        color:palevioletred;
+    }
+
+    .home{width:100vw}
+    .home-row{width:100%}
+
+
 }
