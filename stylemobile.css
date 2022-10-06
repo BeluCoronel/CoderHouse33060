@@ -51,6 +51,9 @@
     padding:10px;
 }
 
+.nosotros ul{
+ padding-left: 1rem; 
+}
 
 
 body {
@@ -117,7 +120,7 @@ footer {
     padding: 10px;
     width:100vw; 
     margin:0;
-    position: absolute;
+    
     bottom: 0;
     
     text-align: center;
@@ -125,6 +128,10 @@ footer {
 }
 
 .footer-element {width: 0%;}
+
+.footer-down{
+    position:absolute;
+}
 
 
 footer a {
@@ -253,31 +260,25 @@ input[type=submit]:hover{
 
 /* nosotros */
 
-.gonzalo{
+.fotos-nosotros{
+    border-radius: 10px;
     display: inline-block;
-    margin:50px;
+    margin-bottom: 30px;
+    
+}
+.gonzalo{   
     border:10px solid #E20613;
-    border-radius: 10px;
    
 }
 
-.ariel{
-    display: inline-block;
-    margin:50px;
+.ariel{  
     border:10px solid #66B22E;
-    border-radius: 10px;
    
 }
 
-.marianoso{
-    display: inline-block;
-    margin:50px;
-    border:10px solid #009EE2;
-    border-radius: 10px;
-    
-    
-
-}
+.marianoso{    
+    border:10px solid #009EE2;   
+    }
 
 .nosotros p{
     text-align: center;
@@ -305,7 +306,7 @@ input[type=submit]:hover{
 .nosotros{
     text-align: center;
     border-radius:10px;
-    margin-top: 200px;
+    margin-top: 80px;
     
 }
 
@@ -377,24 +378,9 @@ background-color: #66B22E;
 
 .texto_footer{
     display: none;
-}
+    cursor: pointer;
 
-/* Start: Video Responsive */
-.video-responsive {
-    overflow:hidden;
-    padding-bottom:400px; /* Adecua este valor para controlar la altura del video */
-    position:relative;
-    height:0;
 }
-
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-/* End: Video Responsive */
 
 
 
