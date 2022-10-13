@@ -1,10 +1,21 @@
+/* Inicio generales */
+
 * {
     padding: 0;
     margin: 0;
     cursor:url(./imagenes/puntero.png), auto;  
-
-
 }
+
+body {
+    background-image: url(imagenes/fondo2.jpg);
+    overflow-x: hidden;
+}
+
+/* Fin generales */
+
+
+
+/* Inicio home */
 
 .ul{
     justify-content:space-evenly;
@@ -13,7 +24,6 @@
 
 .nav-link{
     color: white;
-   
 }
 
 .navbar-toggler{margin-right: 20px;}
@@ -51,31 +61,10 @@
     padding:10px;
 }
 
-.nosotros ul{
- padding-left: 1rem; 
-}
-
-
-body {
-    background-image: url(imagenes/fondo2.jpg);
-    overflow-x: hidden;
-}
-
 .isologo {
-    
     margin-top: 5%;
     text-align : center;
-  
 }
-
-.carrousel slide{
-    margin-top:500%;
-}
-
-
-
-
-
 
 .isologo-text {
     text-align: center;
@@ -104,78 +93,158 @@ span {
 
     .neon{
         text-align: center;
-        
         margin-top: 30px;
         margin-bottom:30px;
-    
-
     }
 
+    .home{width:100vw}
+.home-row{width:100%;justify-content: center;margin: 0;}
+.home-element{   height: auto;
+    max-width: 90%;}
+.home-element span{   height: auto;
+    font-size:30px;
+    width:100%;
+    } 
 
-/* fin home */
 
-/* fotter */
-footer {
-    background-color: #000000be;
-    padding: 10px;
-    width:100vw; 
-    margin:0;
+/* Fin home */
+
+
+/* Inicio nosotros */
+
+
+.nosotros ul{
+padding-left: 1rem; 
+}
+
+.fotos-nosotros{
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 30px;
     
-    bottom: 0;
-    
+}
+.gonzalo{   
+    border:10px solid #E20613;
+}
+
+.ariel{  
+    border:10px solid #66B22E;
+}
+
+.marianoso{    
+    border:10px solid #009EE2;   
+    }
+
+.nosotros p{
     text-align: center;
-    cursor:url(./imagenes/puntero.png), auto;  
-}
-
-.footer-element {width: 0%;}
-
-.footer-down{
-    position:absolute;
-}
-
-
-footer a {
-    text-decoration: none;
+    width: 307px;
     color: white;
-}
-
-.iconos_footer {
-    color: white;
-    font-size: 30px;
     font-family: open sans, sans-serif;
-
+    font-size:15px;
+    margin-bottom: 30px;
 }
 
-.iconos_footer i {
-    margin: 20px;
-}
-
-.texto_footer {
-    font-size: 20px;
-    margin-right: 20px;
-    text-transform: lowercase;
-
-
-}
-
-.iconos_footer a:hover {
-    color: #009EE2;
-    text-decoration: underline;
-}
-
-.iconos_footer a {
+.nosotros h3{
     color: white;
+    font-family: open sans, sans-serif;
+    text-align: center;
+    margin-bottom:10px;
+    font-size:25px;
 }
-/* fin footer */
 
-/* contacto */
+.nosotros{
+    text-align: center;
+    border-radius:10px;
+    margin-top: 80px;
+}
+
+.gonzalo h3{
+    background-color:#E20613;
+}
+
+.ariel h3{
+background-color: #66B22E;
+
+}
+
+.marianoso h3{
+    background-color:#009EE2;
+}
+
+/* Fin nosotros */
+
+/* Inicio juegos */
+
+.titulo-h3 h3{
+    font-family: open sans, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+.card{
+    background-image: url(imagenes/fondoclaro.jpg);
+    padding:10px;
+    width:100%;
+}
+
+.juegos-container{
+    text-align: -webkit-center; 
+    margin-bottom:50px;
+    width: 90vw;
+}
+
+/* Fin juegos */
+
+/* Inicio proyectos */
+
+.proyect{
+    font-family: open sans, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline palevioletred;
+}
+
+.video_juli{
+    margin-left: 30px;
+}
+#video_juli{
+    border: 10px solid;
+    border-color: #009EE2 #66B22E #F9E84B #E20613;
+    text-align: right;
+    margin-top:50px;
+    width:325px;
+    height: 250px;
+    border-radius: 15px;
+    
+}
+
+#ig_juli {
+    color: white;
+    text-decoration:underline palevioletred;
+}
+
+#ig_juli:hover{
+    color:palevioletred;
+}
+
+.fixed-top{
+    position:sticky;
+}
+
+/* Fin proyectos */
+
+/* Inicio contacto */
 
 h2{
-    
     color: white;
     font-family: open sans, sans-serif;
     font-size:30px;
-    margin-left:150px;
+    text-align: center;
     margin-top:30px;
 }
 
@@ -191,13 +260,12 @@ input{
 }
 label{
     padding: 12px 12px 12px 0;
-   display: inline-block;
+    display: inline-block;
 
 }
 form{
-    width: 500px;
-    display: inline-block;
-    
+    width: 300px;
+    margin-left:15px;
 }
 
 form p{
@@ -205,24 +273,26 @@ form p{
     font-family: open sans, sans-serif;
     font-size:15px;
 }
+
 .formcontainer{
   clear: both;
   margin: 0 auto;
-  padding: 15px;
-  margin-left: 50px;
+  width: 350px;
 
-  
 }
+
 .formcontainer input {
     width: 100%;
     clear: both;
     border-radius: 15px;
-  }
+}
+
 .formcontainer textarea {
     width: -webkit-fill-available;
     border-radius: 15px;
     
-  }
+}
+
 input[type=submit] {
     background-color:#009EE2;
     color: rgb(253, 250, 250);
@@ -243,154 +313,74 @@ input[type=submit]:hover{
     vertical-align: top;
     border-radius: 15px;
     margin-top:30px;
-    margin-left: 50px;
+    margin-bottom:30px;
 
 
 }
 #mapa {
     border: 10px solid;
     border-color: #009EE2 #66B22E #F9E84B #E20613;
-    float: right;
-    width: 720px;
-    height: 550px;
+    margin-left: 10px;
+    width: 325px;
+    height: 250px;
     border-radius: 15px;
 }
 
-/* fin contacto */
+/* Fin contacto */
 
-/* nosotros */
 
-.fotos-nosotros{
-    border-radius: 10px;
-    display: inline-block;
-    margin-bottom: 30px;
-    
-}
-.gonzalo{   
-    border:10px solid #E20613;
-   
-}
 
-.ariel{  
-    border:10px solid #66B22E;
-   
-}
+/* Inicio fotter */
 
-.marianoso{    
-    border:10px solid #009EE2;   
-    }
 
-.nosotros p{
+footer {
+    background-color: #000000be;
+    padding: 10px;
+    width:100vw; 
+    margin:0;
+    bottom: 0;
     text-align: center;
-    width: 307px;
-    
+    cursor:url(./imagenes/puntero.png), auto;  
+}
+
+.footer-element {width: 0%;}
+
+.footer-down{
+    position:absolute;
+}
+
+
+footer a {
+    text-decoration: none;
     color: white;
-    font-family: open sans, sans-serif;
-    font-size:15px;
-    margin-bottom: 30px;
-    
-
 }
 
-.nosotros h3{
+.iconos_footer {
     color: white;
+    font-size: 30px;
     font-family: open sans, sans-serif;
-    text-align: center;
-    margin-bottom:10px;
-    
-    font-size:25px;
-    
-
 }
 
-.nosotros{
-    text-align: center;
-    border-radius:10px;
-    margin-top: 80px;
-    
+.iconos_footer i {
+    margin: 20px;
 }
 
-.gonzalo h3{
-    background-color:#E20613;
+.texto_footer {
+    font-size: 20px;
+    margin-right: 20px;
+    text-transform: lowercase;
 }
 
-.ariel h3{
-background-color: #66B22E;
-
+.iconos_footer a:hover {
+    color: #009EE2;
+    text-decoration: underline;
 }
 
-.marianoso h3{
-    background-color:#009EE2;
-}
-
- /* fin nosotros */
-
- /* juegos */
-
-/* fin juegos */
-
-/* proyectos */
-
-.proyect{
-    text-align: center;
-    font-family: open sans, sans-serif;
-    font-size: 50px;
-    margin-right: 30px;
-    text-decoration: underline palevioletred;
-}
-
-.video_juli{
-    margin-left: 34%;
-}
-#video_juli{
-    border: 10px solid;
-    border-color: #009EE2 #66B22E #F9E84B #E20613;
-    text-align: center;
-    margin-top:50px;
-    width: 720px;
-    height: 550px;
-    border-radius: 15px;
-}
-
-#ig_juli {
+.iconos_footer a {
     color: white;
-    text-decoration:underline palevioletred;
 }
-
-#ig_juli:hover{
-    color:palevioletred;
-}
-
-.fixed-top{
-    position:sticky;
-}
-
-.home{width:100vw}
-.home-row{width:100%;justify-content: center;margin: 0;}
-.home-element{   height: auto;
-    max-width: 90%;}
-.home-element span{   height: auto;
-    font-size:30px;
-    width:100%;
-    } 
-    
-
 
 .texto_footer{
     display: none;
     cursor: pointer;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
