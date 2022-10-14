@@ -1,0 +1,42 @@
+/* Inicio juegos */
+
+.titulo-h3 h3{
+    font-family: open sans, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+.card{
+    @include box-shadow(4);
+    background-image: url(../imagenes/fondoclaro.jpg);
+    padding:10px;
+    width:100%;
+}
+
+.juegos-container{
+    text-align: -webkit-center; 
+    margin-bottom:50px;
+    width: 90vw;
+}
+
+/* Fin juegos */
+
+
+ /* Inicio juegos */
+
+ @media (min-width: 992px){
+    
+ .card{
+    width:80%;
+}
+
+.juegos-container{
+    width: 100%;
+}
+}
+/* fin juegos */

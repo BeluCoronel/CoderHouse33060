@@ -1,0 +1,103 @@
+/* Inicio home */
+
+.ul {
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+  &-icon {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+  }
+}
+
+.nav-item a:hover {
+  color: $succes;
+  text-decoration: underline;
+}
+
+.header,
+.row {
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.font-navbar {
+  font-size: 30px;
+  font-family: open sans, sans-serif;
+}
+
+.navbar-brand {
+  padding: 10px;
+}
+
+.isologo {
+  margin-top: 5%;
+  text-align: center;
+  &-text {
+    text-align: center;
+  }
+}
+
+span {
+  display: inline-block;
+  font-family: monospace;
+  white-space: nowrap;
+  width: 15ch;
+  color: white;
+  font-size: 50px;
+  margin-top: 20px;
+  animation: typing 2s steps(15), blink 1s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.neon {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home {
+  width: 100vw;
+
+  &-row {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+  &-element {
+    height: auto;
+    max-width: 90%;
+
+    & span {
+      height: auto;
+      font-size: 30px;
+      width: 100%;
+    }
+  }
+}
+
+/* Fin home */

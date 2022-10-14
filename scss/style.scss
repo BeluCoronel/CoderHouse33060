@@ -1,0 +1,25 @@
+// Include any default variable overrides here (though functions won't be available)
+$primary: #009EE2;
+$secondary: #66B22E;
+$succes: #F9E84B;
+$info:  #E20613;
+$warning: #d87093;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+@import "./complements/mixins";
+@import "./pages/_index.scss";
+@import "./pages/nosotros";
+@import "./pages/juegos";
+@import "./pages/proyectos";
+@import "./pages/contacto";
+@import "./components/footer";
+@import "./components/generales";
+@import "./components/navbar";
+
+@for $q from 1 through 20 {
+    .padding-#{$q}{
+        padding: 1px * $q;
+    }
+}

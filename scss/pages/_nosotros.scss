@@ -1,0 +1,101 @@
+/* Inicio nosotros */
+
+.nosotros {
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 80px;
+
+    & ul {
+        padding-left: 1rem;
+    }
+
+
+    & p {
+        text-align: center;
+        width: 307px;
+        color: white;
+        font-family: open sans, sans-serif;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    & h3 {
+        color: white;
+        font-family: open sans, sans-serif;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+}
+
+.fotos-nosotros {
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 30px;
+
+}
+
+.gonzalo {
+    @include box-shadow(1);
+    border: 10px solid $info;
+
+    & h3 {
+        background-color: $info;
+    }
+}
+
+.ariel {
+    @include box-shadow(2);
+    border: 10px solid $secondary;
+
+    & h3 {
+        background-color: $secondary;
+    }
+}
+
+.marianoso {
+    @include box-shadow(3);
+    border: 10px solid $primary;
+
+    & h3 {
+        background-color: $primary;
+    }
+
+}
+
+/* Fin nosotros */
+
+@media (min-width: 992px) {
+    /* Inicio nosotros */
+
+    .gonzalo {
+        display: inline-block;
+        margin: 50px;
+        border-radius: 10px;
+    }
+
+    .ariel {
+        display: inline-block;
+        margin: 50px;
+        border-radius: 10px;
+    }
+
+    .marianoso {
+        display: inline-block;
+        margin: 50px;
+        border-radius: 10px;
+    }
+
+
+
+    .nosotros {
+        text-align: -webkit-center;
+        margin-top: 100px;
+        & h3 {
+            text-align: center;
+        }
+    }
+
+    /* fin nosotros */
+}
