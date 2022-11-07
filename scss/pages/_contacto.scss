@@ -1,58 +1,66 @@
-/* Inicio contacto */
+/* Mobile */
 
-h2{
+h2 {
     color: white;
     font-family: open sans, sans-serif;
-    font-size:30px;
+    font-size: 30px;
     text-align: center;
-    margin-top:30px;
+    margin-bottom: 70px;
+    background-image: url(../imagenes/fondotitulos.jpg);
+    height: 150px;
+    background-size: cover;
+    padding: 30px;
 }
 
-form{
+form {
     margin-left: 40px;
     width: 300px;
-    margin-left:15px;
-    & p{
+    margin-left: 15px;
+
+    & p {
         color: white;
         font-family: open sans, sans-serif;
-        font-size:15px;
+        font-size: 20px;
     }
 }
 
 
-input{
-  width: 25%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+input {
+    width: 25%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
-label{
+
+label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 
 }
 
 
-.formcontainer{
-  clear: both;
-  margin: 0 auto;
-  width: 350px;
-  & input {
-    width: 100%;
+.formcontainer {
     clear: both;
-    border-radius: 15px;
+    margin: 0 auto;
+    width: 350px;
+
+    & input {
+        width: 100%;
+        clear: both;
+        border-radius: 15px;
+    }
+
+    & textarea {
+        width: -webkit-fill-available;
+        border-radius: 15px;
+
+    }
 }
-& textarea {
-    width: -webkit-fill-available;
-    border-radius: 15px;
-    
-}
-}
- 
+
 
 input[type=submit] {
-    background-color:$primary;
+    background-color: $primary;
     color: rgb(253, 250, 250);
     cursor: pointer;
     margin-bottom: 20px;
@@ -60,21 +68,22 @@ input[type=submit] {
     margin-top: 25px;
 }
 
-input[type=submit]:hover{
-    background-color:$succes;
+input[type=submit]:hover {
+    background-color: $succes;
     color: black;
 }
 
-#gmap{
+#gmap {
     width: 50%;
     display: inline-block;
     vertical-align: top;
     border-radius: 15px;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 
 }
+
 #mapa {
     border: 10px solid;
     border-color: $primary $secondary $succes $info;
@@ -84,38 +93,74 @@ input[type=submit]:hover{
     border-radius: 15px;
 }
 
-/* Fin contacto */
+/* Fin mobile */
 
- /* Inicio contacto */
+/* Tablet */
 
- @media (min-width: 992px){
-        
- h2{
-    margin-left:150px;
-    margin-top:30px;
-    text-align: left;
+@media (max-width: 992px) and (min-width: 768px) {
+
+    h2 {
+        font-size: 45px;
+    }
+
+    form {
+        margin-left: 5px;
+        width: 600px;
+
+        & p {
+            font-size: 25px;
+        }
+    }
+
+    .formcontainer {
+        margin: 10%;
+    }
+
+    #mapa {
+        width: 600px;
+        height: 500px;
+    }
+
+
+
 }
 
-.formcontainer{
-    padding: 15px;
-    margin-left: 50px;
-    width:100%;
+/* Fin tablet */
+
+/* Desktop */
+
+@media (min-width: 992px) {
+
+    h2 {
+        font-size: 60px;
+        margin-bottom: 70px;
+        height: 200px;
+        padding: 70px;
+    }
+
+
+
+    .formcontainer {
+        padding: 15px;
+        margin-left: 50px;
+        width: 100%;
+    }
+
+    form {
+        width: 500px;
+        display: inline-block;
+    }
+
+
+    #gmap {
+        margin-left: 50px;
+    }
+
+    #mapa {
+        float: right;
+        width: 720px;
+        height: 550px;
+    }
 }
 
-form{
-    width:500px;
-    display: inline-block;
-}
-
-
-#gmap{
-    margin-left: 50px;
-}
-#mapa {
-    float: right;
-    width: 720px;
-    height: 550px;
-}
-}
-
-/* fin contacto */
+/* Fin desktop */

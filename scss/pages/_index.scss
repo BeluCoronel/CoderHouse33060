@@ -1,54 +1,35 @@
-/* Inicio home */
+/* Mobile */
 
-.ul {
-  justify-content: space-evenly;
-}
+.home {
+  width: 100vw;
 
-.nav-link {
-  color: white;
-}
+  &-row {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
 
-.navbar-toggler {
-  margin-right: 20px;
-  &-icon {
-    width: 35px;
-    height: 35px;
-    padding: 10px;
+  &-element {
+    height: auto;
+    max-width: 90%;
+
+    & span {
+      height: auto;
+      font-size: 30px;
+      width: 100%;
+    }
   }
 }
 
-.nav-item a:hover {
-  color: $succes;
-  text-decoration: underline;
-}
-
-.header,
-.row {
-  padding: 0;
-}
-
-.container-fluid {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-.font-navbar {
-  font-size: 30px;
-  font-family: open sans, sans-serif;
-}
-
-.navbar-brand {
-  padding: 10px;
-}
-
 .isologo {
-  margin-top: 5%;
+  margin-top: 100px;
   text-align: center;
+
   &-text {
     text-align: center;
   }
 }
+
 
 span {
   display: inline-block;
@@ -80,24 +61,18 @@ span {
   margin-bottom: 30px;
 }
 
-.home {
-  width: 100vw;
 
-  &-row {
-    width: 100%;
-    justify-content: center;
-    margin: 0;
-  }
-  &-element {
-    height: auto;
-    max-width: 90%;
 
-    & span {
-      height: auto;
-      font-size: 30px;
-      width: 100%;
-    }
+@media (min-width: 768px) {
+  .isologo {
+    margin-top: 25%;
   }
 }
 
-/* Fin home */
+@media (min-width: 992px) {
+  .isologo {
+    margin-top: 10%;
+  }
+}
+
+/* Fin mobile */

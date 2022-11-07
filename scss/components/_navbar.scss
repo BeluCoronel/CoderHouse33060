@@ -1,45 +1,53 @@
-.ul{
-    justify-content:space-evenly;
+.container-fluid {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.ul {
+    justify-content: space-evenly;
 }
 
 
-.nav-link{
+.nav-link {
     color: white;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     margin-right: 20px;
-    &-icon{
+
+    &-icon {
         width: 35px;
-        height:35px;
-        padding:10px;
+        height: 35px;
+        padding: 10px;
     }
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     color: $succes;
     text-decoration: underline;
 
 }
 
-.header, .row{
-    padding: 0; 
+.header,
+.row {
+    padding: 0;
 }
 
 
-.container-fluid{
+.container-fluid {
     padding: 0;
-    margin:0;
+    margin: 0;
     width: 100%;
 }
 
 
-.font-navbar{
-    font-size:30px;
+.font-navbar {
+    font-size: 30px;
     font-family: open sans, sans-serif;
 }
 
-.navbar-brand{
+.navbar-brand {
     padding: 10px;
 }
 
@@ -49,12 +57,9 @@
 
 
 @media (min-width: 992px) {
-    
-    .fixed-top{
-        position:sticky;
-    }
-    
-    .nav-item{
+
+
+    .nav-item {
         margin-right: 0;
     }
 }

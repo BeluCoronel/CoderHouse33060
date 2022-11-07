@@ -1,22 +1,24 @@
-
 footer {
     background-color: #000000be;
     padding: 10px;
-    width:100vw; 
-    margin:0;
+    width: 100vw;
+    margin: 0;
     bottom: 0;
     text-align: center;
-    cursor:url(./imagenes/puntero.png), auto;
+    cursor: url(./imagenes/puntero.png), auto;
+
     & a {
         text-decoration: none;
         color: white;
     }
 }
 
-.footer-element {width: 0%;}
+.footer-element {
+    width: 0%;
+}
 
-.footer-down{
-    position:absolute;
+.footer-down {
+    position: absolute;
 }
 
 
@@ -24,9 +26,11 @@ footer {
     color: white;
     font-size: 30px;
     font-family: open sans, sans-serif;
+
     & i {
         margin: 20px;
     }
+
     & a {
         color: white;
     }
@@ -45,25 +49,26 @@ footer {
     text-transform: lowercase;
     display: none;
     cursor: pointer;
-    
+
 }
 
 
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
 
     footer {
-        width:100%;
+        width: 100%;
     }
 
-    .footer-down{
-        position:absolute;
-    }
-    .footer-down-nosotros{
-        position:absolute;
+    .footer-down {
+        position: absolute;
     }
 
-    .texto_footer{
-        display:contents;
-}
+    .footer-down-nosotros {
+        position: absolute;
+    }
+
+    .texto_footer {
+        display: contents;
+    }
 }

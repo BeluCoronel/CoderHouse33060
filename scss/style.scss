@@ -2,7 +2,7 @@
 $primary: #009EE2;
 $secondary: #66B22E;
 $succes: #F9E84B;
-$info:  #E20613;
+$info: #E20613;
 $warning: #d87093;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -19,7 +19,7 @@ $warning: #d87093;
 @import "./components/navbar";
 
 @for $q from 1 through 20 {
-    .padding-#{$q}{
+    .padding-#{$q} {
         padding: 1px * $q;
     }
 }
