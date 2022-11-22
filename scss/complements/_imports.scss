@@ -4,8 +4,9 @@
 
 
 // Then add additional custom code here
-@import"./complements/variables";
-@import"./complements/bucle";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./complements/variables";
+@import "./complements/bucle";
 @import "./complements/mixins";
 @import "./pages/_index.scss";
 @import "./pages/nosotros";
