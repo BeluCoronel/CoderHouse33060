@@ -1,18 +1,18 @@
 /* Mobile */
 
-h2 {
+.contacto h1 {
     color: white;
     font-family: open sans, sans-serif;
     font-size: 30px;
     text-align: center;
     margin-bottom: 70px;
-    background-image: url(../imagenes/fondotitulos.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 150px;
     background-size: cover;
     padding: 30px;
 }
 
-form {
+.contacto__form {
     margin-left: 40px;
     width: 300px;
     margin-left: 15px;
@@ -25,7 +25,7 @@ form {
 }
 
 
-input {
+.contacto__form__input {
     width: 25%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -33,7 +33,7 @@ input {
     resize: vertical;
 }
 
-label {
+.contacto__form__etiqueta {
     padding: 12px 12px 12px 0;
     display: inline-block;
 
@@ -41,13 +41,10 @@ label {
 
 
 .formcontainer {
-    clear: both;
     margin: 0 auto;
-    width: 350px;
 
     & input {
         width: 100%;
-        clear: both;
         border-radius: 15px;
     }
 
@@ -59,7 +56,7 @@ label {
 }
 
 
-input[type=submit] {
+.contacto__form__input[type=submit] {
     background-color: $primary;
     color: rgb(253, 250, 250);
     cursor: pointer;
@@ -68,7 +65,7 @@ input[type=submit] {
     margin-top: 25px;
 }
 
-input[type=submit]:hover {
+.contacto__form__input[type=submit]:hover {
     background-color: $succes;
     color: black;
 }
@@ -99,11 +96,11 @@ input[type=submit]:hover {
 
 @media (max-width: 992px) and (min-width: 768px) {
 
-    h2 {
+    .contacto h1 {
         font-size: 45px;
     }
 
-    form {
+    .contacto__form {
         margin-left: 5px;
         width: 600px;
 
@@ -131,7 +128,7 @@ input[type=submit]:hover {
 
 @media (min-width: 992px) {
 
-    h2 {
+    .contacto h1 {
         font-size: 60px;
         margin-bottom: 70px;
         height: 200px;
@@ -143,10 +140,10 @@ input[type=submit]:hover {
     .formcontainer {
         padding: 15px;
         margin-left: 50px;
-        width: 100%;
+
     }
 
-    form {
+    .contacto__form {
         width: 500px;
         display: inline-block;
     }

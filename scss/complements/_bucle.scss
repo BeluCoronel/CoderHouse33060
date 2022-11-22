@@ -1,0 +1,5 @@
+@for $q from 1 through 20 {
+    .padding-#{$q} {
+        padding: 1px * $q;
+    }
+}

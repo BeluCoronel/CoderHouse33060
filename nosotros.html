@@ -5,10 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Empresa de desarrollo y diseño de videojuegos">
-  <meta name="keywords" content="Roles que cumplimos dentro de la empresa">
+  <meta name="description"
+    content="Información sobre nuestra historia, los integrantes de nuestro equipo y a qué rol cumple cada uno dentro de la empresa">
+  <meta name="keywords" content="GAM, desarrollo, diseño, programación, videojuegos, modelado 3D">
   <link rel="shortcut icon" href="./imagenes/dragon.ico" />
-  <title>GAM</title>
+  <title>GAM, empresa de programación y diseño de videojuegos</title>
   <!-- link de mi css -->
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://kit.fontawesome.com/8909e91f89.js" crossorigin="anonymous"></script>
@@ -32,9 +33,9 @@
           </button>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav flex-row flex-wrap ms-md-auto col-sm-6">
+          <ul class="navbar-nav  ms-md-auto ">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="./index.html">Inicio</a>
+              <a class="nav-link ps-5" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item ps-5">
               <a class="nav-link active text-primary" href="nosotros.html">Nosotros</a>
@@ -57,57 +58,63 @@
 
 
   <section class="titulo">
-    <h4>Sobre nosotros</h4>
+    <h1>Sobre nosotros</h1>
   </section>
-
-  <div class="historia">
-    <p> G.A.M (Gonzalo, Ariel, Mariano), es una empresa en desarrollo, estamos dando nuestros primeros pasos y nos
-      gustaría que seas parte de
-      nuestros comienzos. Somos estudiantes de la universidad Da Vinci, donde nos conocimos y empezamos a trabajar en
-      equipo, actualmente
-      estamos trabajando en proyectos propios, mientras seguimos aprendiendo y mejorando nuestras habilidades.
-    </p>
-    <p> Cada uno de nosotros se
-      destaca en un área en particular por lo que conformamos un excelente equipo de trabajo. Nuestro objetivo es
-      diseñar y crear grandes Juegos
-      de todo tipo, en principio para pc y celulares y luego seguir desarrollando para PlayStation. Por el momento no
-      tenemos juegos publicados
-      pero estamos trabajando en ello.</p>
-
-  </div>
-
-
+  <article>
+    <div class="historia">
+      <p> G.A.M (Gonzalo, Ariel, Mariano), es una empresa en desarrollo, estamos dando nuestros primeros pasos y nos
+        gustaría que seas parte de
+        nuestros comienzos. Somos estudiantes de la universidad Da Vinci, donde nos conocimos y empezamos a trabajar en
+        equipo, actualmente
+        estamos trabajando en proyectos propios, mientras seguimos aprendiendo y mejorando nuestras habilidades.
+      </p>
+      <p> Cada uno de nosotros se
+        destaca en un área en particular por lo que conformamos un excelente equipo de trabajo. Nuestro objetivo es
+        diseñar y crear grandes Juegos
+        de todo tipo, en principio para pc y celulares y luego seguir desarrollando para PlayStation. Por el momento no
+        tenemos juegos publicados
+        pero estamos trabajando en ello.</p>
+    </div>
   </article>
-  <h1>Nuestro equipo</h1>
+
+  <h2 class="subtitulo_nosotros">Nuestro equipo</h2>
   <section class="nosotros">
     <div class="home-element">
       <ul>
-        <li class="gonzalo fotos-nosotros">
-          <img src="./imagenes/gonzalo.jpg" alt="gonzalo" />
-          <h3 class="padding-8">GONZALO</h3>
-          <p>
-            Programador y Game Designer
-          </p>
-          <a class="btn btn-info mb-3" href="https://www.instagram.com/gonchimp" target="_blank" role="button">Ir al
-            instagram</a>
+        <li class="fotos__nosotros">
+          <img src="./imagenes/gonzalo.jpg" alt="gonzalo" class="gonzalo__foto" />
+          <div class="fotos__nosotros--info p-3">
+            <h3 class="padding-8">GONZALO</h3>
+            <p>
+              Programador y Game Designer
+            </p>
+            <a class="btn btn-info mb-3 fotos__nosotros__gonzalo--boton" href="https://www.instagram.com/gonchimp"
+              target="_blank" role="button">Ir al
+              instagram</a>
+          </div>
         </li>
-        <li class="ariel fotos-nosotros">
-          <img src="./imagenes/ariel.jpg" alt="ariel" />
-          <h3 class="padding-8">ARIEL</h3>
-          <p>
-            Level designer y VFX Artist
-          </p>
-          <a class="btn btn-secondary mb-3" href="https://www.instagram.com/arielferrerpitzus" target="_blank"
-            role="button">Ir al instagram</a>
+        <li class="fotos__nosotros">
+          <img src="./imagenes/ariel.jpg" alt="ariel" class="ariel__foto" />
+          <div class="fotos__nosotros--info p-3">
+            <h3 class="padding-8">ARIEL</h3>
+            <p>
+              Level designer y VFX Artist
+            </p>
+            <a class="btn btn-secondary mb-3 fotos__nosotros__aiel--boton"
+              href="https://www.instagram.com/arielferrerpitzus" target="_blank" role="button">Ir al instagram</a>
+          </div>
         </li>
-        <li class="marianoso fotos-nosotros">
-          <img src="./imagenes/mariano.jpg" alt="marianoso" />
-          <h3 class="padding-8">MARIANO</h3>
-          <p>
-            Modelador 3D y Sound Designer
-          </p>
-          <a class="btn btn-primary mb-3" href="https://www.instagram.com/marianmungo" target="_blank" role="button">Ir
-            al instagram</a>
+        <li class="fotos__nosotros">
+          <img src="./imagenes/mariano.jpg" alt="marianoso" class="marianoso__foto" />
+          <div class="fotos__nosotros--info p-3">
+            <h3 class="padding-8">MARIANO</h3>
+            <p>
+              Modelador 3D y Sound Designer
+            </p>
+            <a class="btn btn-primary mb-3 fotos__nosotros__marianoso--boton"
+              href="https://www.instagram.com/marianmungo" target="_blank" role="button">Ir
+              al instagram</a>
+          </div>
         </li>
       </ul>
     </div>

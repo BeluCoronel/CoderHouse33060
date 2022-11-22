@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Empresa de desarrollo y diseño de videojuegos">
-  <meta name="keywords" content="Isologo de la empresa GAM">
+  <meta name="description" content="Información sobre nuestra empresa y quiénes somos">
+  <meta name="keywords" content="GAM, desarrollo, diseño, programación, videojuegos, modelado 3D">
   <link rel="shortcut icon" href="./imagenes/dragon.ico" />
-  <title>GAM</title>
+  <title>GAM, empresa de programación y diseño de videojuegos</title>
   <!-- link de mi css -->
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://kit.fontawesome.com/8909e91f89.js" crossorigin="anonymous"></script>
@@ -32,9 +32,9 @@
           </button>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav flex-row flex-wrap ms-md-auto col-sm-6">
+          <ul class="navbar-nav  ms-md-auto ">
             <li class="nav-item">
-              <a class="nav-link active text-primary" aria-current="page" href="./index.html">Inicio</a>
+              <a class="nav-link active text-primary ps-5" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item ps-5">
               <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -58,6 +58,7 @@
 
   <!-- Home -->
   <section class="home">
+
     <div class="container isologo">
       <div class="home-row row">
         <div class="home-element">
@@ -72,21 +73,119 @@
 
   <div class="container neon">
     <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8">
+      <div class="col-lg-6 neon__col">
         <img src="./imagenes/circulo.png" alt="circulo neon" />
         <img src="./imagenes/triangulo.png" alt="triangulo neon" />
+      </div>
+      <div class="col-lg-6 neon__col">
         <img src="./imagenes/cruz.png" alt="cruz neon" />
         <img src="./imagenes/cuadrado.png" alt="cuadrado neon" />
       </div>
-      <div class="col-2"></div>
     </div>
   </div>
+
+  <div class="wave-container"></div>
+
+  <section class="preguntas">
+    <h1 class="titulo__preguntas">Datos interesantes sobre nosotros</h1>
+    <div class="accordion accordion-flush" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            ¿Que es GAM?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p> Somos GAM, una empresa argentina de desarrollo y programación de videojuegos dando sus primeros pasos en
+              el mundo de la creación de videojuegos. Nos queda un largo camino por delante, pero tarde o temprano
+              conquistaremos el mundo, Mujaja! </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed preguntas__boton--fondo" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            ¿Quiénes integran la empresa?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p> Actualmente somos 3 personas trabajando en este nuevo proyecto, Gonzalo, Ariel y Mariano. <br>
+              Los tres somos estudiante de la universidad DaVinci, en donde nos conocimos y empezamos a crear esta
+              empresa de a poco con proyectos propuestos
+              por la universidad.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            ¿Cuál es nuestro objetivo?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p> Queremos seguir creciendo como profesionales y crear juegos que lleguen a muchas personas llevando un
+              poco de alegría y diversion
+              a cada uno de nuestros hermosos jugadores.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed preguntas__boton--fondo" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            ¿Cómo surgió la empresa?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p> Nos conocimos estudiando en la univarsidad DaVinci. Haciendo grupo para realizar parciales y trabajos
+              prácticos de la facultad,
+              nos dimos cuenta que hacemos buen equipo y decidimos empezar a crear nuestra empresa de videojuegos.
+              Todavía nos falta seguir
+              aprendiendo y desarrollando juegos pero estamos en camino a ser una de las mejores empresas argentinas de
+              programación y diseño
+              de videojuegos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            ¿En qué estamos trabajando actualmente?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p> Estamos trabajando en un proyecto junto con Juli Suanno, artista argentina. Nos contactó para hacer un
+              juego para el lanzamiento
+              de su nuevo disco. Pueden contactarnos a través de nuestras redes sociales para consultas o unirse a
+              nuestro equipo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Fin home -->
 
   <!-- footer -->
-  <footer class="footer-down">
+  <footer class="footer-down-nosotros">
     <div class="iconos_footer">
       <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://www.instagram.com" target="_blank" class="texto_footer">/GAM</a>

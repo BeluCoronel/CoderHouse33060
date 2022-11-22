@@ -36,19 +36,19 @@
 }
 
 .titulo {
-    background-image: url(../imagenes/fondotitulos.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 150px;
     background-size: cover;
     padding: 30px;
 
-    & h4 {
+    & h1 {
         font-size: 30px;
         text-align: center;
         color: white;
     }
 }
 
-h1 {
+.subtitulo_nosotros {
     color: white;
     text-align: center;
     font-size: 50px;
@@ -58,7 +58,7 @@ h1 {
 .historia {
     display: flex;
     flex-direction: column;
-    background-image: url(../imagenes/fondotitulos.jpg);
+    background-color: rgba(0, 0, 0, 0.4);
 
 }
 
@@ -71,40 +71,89 @@ h1 {
 
 }
 
-.fotos-nosotros {
-    border-radius: 10px;
+.fotos__nosotros {
     display: inline-block;
     margin-bottom: 30px;
     text-align: center;
 
 }
 
-.gonzalo {
+.gonzalo__foto {
+    border-radius: 50%;
+    border: solid 5px $info;
     @include box-shadow(1);
-    border: 10px solid $info;
 
-    & h3 {
+    & a {
         background-color: $info;
     }
 }
 
-.ariel {
+.ariel__foto {
     @include box-shadow(2);
-    border: 10px solid $secondary;
+    border: 5px solid $secondary;
+    border-radius: 50%;
 
-    & h3 {
+    & a {
         background-color: $secondary;
     }
 }
 
-.marianoso {
+.marianoso__foto {
     @include box-shadow(3);
-    border: 10px solid $primary;
+    border: 5px solid $primary;
+    border-radius: 50%;
 
-    & h3 {
+    & a {
         background-color: $primary;
+
+
     }
 
+}
+
+.fotos__nosotros--info {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 50px;
+}
+
+
+.fotos__nosotros__gonzalo--boton {
+    background-color: $info;
+    border-color: $info;
+
+    &:hover {
+        background-color: $succes;
+        border-color: $succes;
+        color: black;
+    }
+}
+
+
+.fotos__nosotros__aiel--boton {
+    background-color: $secondary;
+    border-color: $secondary;
+
+    &:hover {
+        background-color: $succes;
+        border-color: $succes;
+        color: black;
+    }
+}
+
+.fotos__nosotros__marianoso--boton {
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover {
+        background-color: $succes;
+        border-color: $succes;
+        color: black;
+    }
 }
 
 
@@ -114,7 +163,7 @@ h1 {
 
 @media (max-width: 992px) and (min-width: 768px) {
 
-    .titulo h4 {
+    .titulo h1 {
         font-size: 45px;
     }
 
@@ -123,7 +172,7 @@ h1 {
 
     }
 
-    .fotos-nosotros {
+    .fotos__nosotros {
         display: flex;
         flex-direction: column;
         width: 70%;
@@ -138,60 +187,46 @@ h1 {
     }
 }
 
-    /* Fin tablet */
+/* Fin tablet */
 
-    /* Desktop */
-    @media (min-width: 992px) {
-
-
-        .titulo {
-            height: 200px;
-            padding: 70px;
-
-            & h4 {
-                font-size: 60px;
-            }
-        }
+/* Desktop */
+@media (min-width: 992px) {
 
 
-        .historia {
-            display: flex;
-            flex-direction: row;
-        }
+    .titulo {
+        height: 200px;
+        padding: 70px;
 
-        .historia p {
-            font-size: 24px;
-            padding: 50px;
-            width: 70%;
-
-        }
-
-        .gonzalo {
-            display: inline-block;
-            margin: 50px;
-            border-radius: 10px;
-        }
-
-        .ariel {
-            display: inline-block;
-            margin: 50px;
-            border-radius: 10px;
-        }
-
-        .marianoso {
-            display: inline-block;
-            margin: 50px;
-            border-radius: 10px;
-        }
-
-
-
-        .nosotros {
-            text-align: -webkit-center;
-            margin-top: 100px;
-
-            & h3 {
-                text-align: center;
-            }
+        & h1 {
+            font-size: 60px;
         }
     }
+
+
+    .historia {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .historia p {
+        font-size: 24px;
+        padding: 50px;
+        width: 70%;
+
+    }
+
+
+    .nosotros {
+        text-align: -webkit-center;
+        margin-top: 100px;
+
+        & h3 {
+            text-align: center;
+        }
+    }
+}
+
+.fotos__nosotros--info {
+    margin-left: 20px;
+    margin-right: 20px;
+}

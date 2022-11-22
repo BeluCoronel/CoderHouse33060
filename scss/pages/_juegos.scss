@@ -1,12 +1,12 @@
 /* Mobile */
 
 
-.titulo-h3 h3 {
+.titulo-h1 h1 {
     font-family: open sans, sans-serif;
     color: white;
     text-align: center;
     font-size: 30px;
-    background-image: url(../imagenes/fondotitulos.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 150px;
     background-size: cover;
     padding: 30px;
@@ -14,16 +14,21 @@
 }
 
 .card-title {
-    color: black;
+    color: white;
+
 }
 
 
 .card {
-    @include box-shadow(4);
-    background-image: url(../imagenes/fondoclaro.jpg);
-    padding: 10px;
-    width: 100%;
-    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    &-text {
+        color: white;
+    }
 }
 
 .juegos-container {
@@ -32,10 +37,21 @@
     width: 90vw;
 }
 
-blockquote,
-h5 {
+.comentarios__carrousel__cita {
     color: white;
     font-family: open sans, sans-serif;
+
+    &__juan {
+        color: $primary;
+    }
+
+    &__olivia {
+        color: $secondary
+    }
+
+    &__santiago {
+        color: $info;
+    }
 }
 
 
@@ -46,7 +62,7 @@ h5 {
 
 .comentarios {
     text-align: center;
-    background-image: url(../imagenes/fondotitulos.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
     font-size: 20px;
     margin-top: 100px;
 
@@ -54,7 +70,7 @@ h5 {
         font-size: 40px;
         height: 50px;
         color: white;
-        margin-bottom: 100px;
+        margin-bottom: 200px;
         padding-top: 20px;
 
 
@@ -72,7 +88,7 @@ h5 {
 /* Tablet */
 
 @media (max-width: 992px) and (min-width: 768px) {
-    .titulo-h3 h3 {
+    .titulo-h1 h1 {
         font-size: 45px;
     }
 
@@ -86,7 +102,7 @@ h5 {
 
 @media (min-width: 992px) {
 
-    .titulo-h3 h3 {
+    .titulo-h1 h1 {
         font-size: 60px;
         height: 200px;
         padding: 70px;
@@ -100,12 +116,8 @@ h5 {
         & h4 {
             font-size: 50px;
             height: 100px;
-
-
-
-
+            margin-bottom: 50px;
         }
-
     }
 
     .card {

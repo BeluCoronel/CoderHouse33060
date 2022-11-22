@@ -1,7 +1,7 @@
 /* Mobile */
 
 .home {
-  width: 100vw;
+  width: 99vw;
 
   &-row {
     width: 100%;
@@ -58,21 +58,115 @@ span {
 .neon {
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+  &__col {
+    padding: 0;
+  }
+
+}
+
+.wave-container {
+  height: 10vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 1) 100%);
+  position: relative;
+}
+
+.wave-container::before {
+  content: "";
+  width: 100%;
+  height: 105px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 13vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 125' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 3 32.2291 5 51.5 8C104.5 18 200 40 300 61C400 83 500 104 600 96C700 87 800 49 900 28C987.526 5 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V125H1150C1100 125 1000 125 900 125C800 125 700 125 600 125C500 125 400 125 300 125C200 125 100 125 50 125H0V1.98128Z' fill='%23ffffff'/></svg>");
+}
+
+@media(max-width:850px) {
+  .wave-container::before {
+    height: 52.5px
+  }
+}
+
+
+.accordion-button {
+  background-color: $primary;
+  color: white;
+  font-family: open sans, sans-serif;
+  font-weight: medium;
+  font-size: 25px;
+}
+
+.accordion-body {
+  background-color: rgb(48, 47, 47);
+  color: white;
+  font-family: open sans, sans-serif;
+}
+
+.preguntas__boton--fondo {
+  background-color: black;
+  color: white;
+}
+
+.titulo__preguntas {
+  background-color: white;
+  color: black;
+  font-family: open sans, sans-serif;
+  font-size: 25px;
+  margin-top: 500px;
+  text-align: center;
+  height: 120px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
 
-@media (min-width: 768px) {
+/* Fin mobile */
+
+/* Tablet */
+
+@media (max-width: 992px) and (min-width: 768px) {
   .isologo {
     margin-top: 25%;
   }
-}
 
-@media (min-width: 992px) {
-  .isologo {
-    margin-top: 10%;
+  .titulo__preguntas {
+    font-size: 30px;
+    height: 150px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
 
-/* Fin mobile */
+
+/* Fin tablet */
+
+/* Desktop */
+
+@media (min-width: 992px) {
+  .isologo {
+    margin-top: 5%;
+  }
+
+  .titulo__preguntas {
+    font-size: 40px;
+    height: 200px;
+    padding-top: 75px;
+    padding-bottom: 40px;
+  }
+
+  .neon {
+    margin-bottom: 180px;
+  }
+}
+
+
+/* Fin desktop */

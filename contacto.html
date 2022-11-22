@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Empresa de desarrollo y diseño de videojuegos">
-  <meta name="keywords" content="Comunicate con nosotros, seguinos en nuestras redes">
+  <meta name="description" content="Contactate con nostros para saber más o formar parte de nuestro equipo">
+  <meta name="keywords" content="GAM, desarrollo, diseño, programación, videojuegos, modelado 3D">
   <link rel="shortcut icon" href="./imagenes/dragon.ico" />
-  <title>GAM</title>
+  <title>GAM, empresa de programación y diseño de videojuegos</title>
   <!-- link de mi css -->
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://kit.fontawesome.com/8909e91f89.js" crossorigin="anonymous"></script>
@@ -32,9 +32,9 @@
           </button>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav flex-row flex-wrap ms-md-auto col-sm-6">
+          <ul class="navbar-nav  ms-md-auto ">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="./index.html">Inicio</a>
+              <a class="nav-link ps-5" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item ps-5">
               <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -56,31 +56,31 @@
   <!-- Fin barra de navegación -->
 
   <section class="contacto">
-    <h2 id="contacto">Contacto</h2>
+    <h1 class="contacto">Contacto</h1>
     <div class="formcontainer">
-      <form action="#">
+      <form action="#" class="contacto__form">
         <p>
-          <label for="camponombre">Nombre</label>
-          <input type="text" name="nombre" id="camponombre" placeholder="Nombre" />
+          <label for="camponombre" class="contacto__form__etiqueta">Nombre</label>
+          <input type="text" name="nombre" id="camponombre" placeholder="Nombre" class="contacto__form__input" />
         </p>
         <p>
-          <label for="apellido">Apellido</label>
-          <input type="text" name="apellido" id="apellido" placeholder="Apellido" />
+          <label for="apellido" class="contacto__form__etiqueta">Apellido</label>
+          <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="contacto__form__input" />
         </p>
         <p>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email" />
+          <label for="email" class="contacto__form__etiqueta">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" class="contacto__form__input" />
         </p>
         <p>
-          <label for="teléfono">Teléfono</label>
-          <input type="number" name="teléfono" id="teléfono" placeholder="Teléfono" />
+          <label for="teléfono" class="contacto__form__etiqueta">Teléfono</label>
+          <input type="number" name="teléfono" id="teléfono" placeholder="Teléfono" class="contacto__form__input" />
         </p>
         <p>
-          <label for="mensaje">Mensaje</label>
+          <label for="mensaje" class="contacto__form__etiqueta">Mensaje</label>
           <textarea id="mensaje" name="areamensaje" rows="8" cols="69"></textarea>
         </p>
         <p>
-          <input type="submit" value="Enviar" />
+          <input type="submit" value="Enviar" class="contacto__form__input" />
         </p>
       </form>
 
